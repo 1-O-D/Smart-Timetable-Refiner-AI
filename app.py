@@ -326,7 +326,7 @@ if st.button("Generate AI Advice"):
         try:
 
             headers = {
-               "Authorization": f"Bearer {st.secrets['OPENROUTER_API_KEY']}" ,
+               "Authorization": "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"
                 "Content-Type": "application/json" 
             }
 
