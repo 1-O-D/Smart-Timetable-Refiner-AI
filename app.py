@@ -4,6 +4,7 @@ import plotly.express as px
 from datetime import datetime
 from dateutil.parser import parse
 import requests
+api_key = st.secrets["OPENROUTER_API_KEY"]
 
 # =========================
 # CONFIG
@@ -326,7 +327,7 @@ if st.button("Generate AI Advice"):
         try:
 
             headers = {
-               "Authorization": "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"
+               "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/json" 
             }
 
